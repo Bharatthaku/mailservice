@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1190px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+header {
+    background-color: #549DD5;
+    height: 10vh;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.logo p {
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    margin-left: 20px;
+}
+
+.tell a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-bg {
+    background: linear-gradient(to bottom, rgba(000,000,0,0.7), rgba(000,000,0,0.7) ), url(../images/banner-1.jpg)0 0 no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.main-text {
+    position: relative;
+    top: 80px;
+    text-align: center;
+}
+
+.main-text h1 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.main-text p {
+    font-size: 22px;
+    color: #549DD5;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.button-1 a {
+    font-size: 24px;
+    background: #76b9ec;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 8px;
+    transition: all 0.s;
+
+}
+
+.button-1 a:hover {
+    border: 3px solid #76b9ec;
+    background: #1e88da;
+}
+
+.service {
+    padding: 60px 0;
+}
+
+.service-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mail-img {
+    width: 300px;
+    margin-left: 60px;
+}
+
+.mail-img img {
+    width: 100%;
+}
+
+.service-text h2 {
+    font-size: 46px;
+    margin-bottom: 30px;
+}
+
+.service-text ul {
+    column-count: 2;
+    font-size: 16px;
+}
+
+.service-text li {
+    list-style: none;
+    font-size: 20px;
+    word-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+.contect {
+    padding: 80px 0;
+    background: #eeee;
+}
+
+.contect-text h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.contect-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+
+.contect-box .serviceBox {
+    position: relative;
+    width: 350px;
+    height: 280px;
+    background: #51446e;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .contect-box .serviceBox .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--i);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-delay: 0.25s;
+  }
+  
+  .contect-box .serviceBox:hover .icon {
+    top: 30px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition-delay: 0s;
+  }
+  
+  .contect-box .serviceBox .icon i {
+    font-size: 5em;
+    color: #fff;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  
+  .contect-box .serviceBox:hover .icon i {
+    font-size: 2em;
+    transition-delay: 0s;
+  }
+  
+  .contect-box .serviceBox .content {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+  
+  .contect-box .serviceBox:hover .content {
+    transform: scale(1);
+    transition-delay: 0.25s;
+  }
+  
+  .contect-box .serviceBox .content h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .contect-box .serviceBox .content p {
+    font-weight: 300;
+    line-height: 1.5em;
+  }
+
+  .steps-list-2 {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .steps-list-2 li {
+      list-style: none;
+  }
+
+  .steps-list-2 span {
+      margin-right: 5px;
+  }
+
+  .bottom-box {
+      padding: 80px 0;
+  }
+
+  .bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  
+  .bottom .img-2 {
+      width: 400px;
+      margin-left: 30px;
+  }
+
+  .bottom .img-2 img {
+      width: 100%;
+  }
+
+  .bottom-box-in h3 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    word-spacing: 7px;
+  }
+
+  .bottom-box-in p {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 40px;
+  }
+
+  .button-2 a {
+    font-size: 19px;
+    background: #76b9ec;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 8px;
+    transition: all 0.s;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 30px;
+    background: #76b9ec;
+}
+
+ a.f-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+a.pp {
+    font-size: 16px;
+    color: #000000;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.tel a {
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+@media only screen and (max-width:600px) {
+    
+    .main {
+        top: 28px;
+    }
+    .main-bg {
+        height: 49vh;
+        background-position: center;
+    }
+    .logo p {
+        display: none;
+    }
+
+    .mail-img {
+        width: 230px;
+        margin-bottom: 15px;
+    }
+
+    .service-text ul {
+        column-count: 1;
+    }
+
+    .contect-text h2 {
+        font-size: 20px;
+        margin: 0 0 23px 44px;
+    }
+
+    .bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom .img-2 {
+        width: 180px;
+    }
+
+    .contect-box .serviceBox {
+        width: 240px;
+        height: 240px;
+    }
+
+    .service-text h2 {
+        font-size: 27px;
+    }
+
+    .steps-list-2 {
+        display: block;
+    }
+
+    .steps-list-2 li {
+        margin-bottom: 5px;
+    }
+
+    a.pp {
+        margin-left: 8px;
+    } 
+.service-box {
+    grid-template-columns: 1fr;
+}
+}
